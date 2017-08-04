@@ -4,7 +4,7 @@ workspace 'ObjectiveCBaseApplication'
 # http://guides.cocoapods.org/using/the-podfile.html
 abstract_target 'BasePods' do
 
-    #pod "AFNetworking", "~> 2.5"
+    pod "AFNetworking", "~> 2.5"
 	pod 'CocoaLumberjack', '~> 2.0'
 	pod 'Masonry', '~> 0.6'
 	#pod 'Reachability', '~> 3.2'

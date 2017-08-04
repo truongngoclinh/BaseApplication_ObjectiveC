@@ -1,11 +1,9 @@
 //
 //  CPArrowButton.h
-//  Cyberpay
+//  ObjectiveCBaseApplication
 //
-//
-//  Created by yangzhixing on 9/10/15.
-//  Copyright © 2015 Garena. All rights reserved.
-//
+//  Created by Linh on 8/4/17.
+//  Copyright © 2017 smvn. All rights reserved.
 
 #import <UIKit/UIKit.h>
 

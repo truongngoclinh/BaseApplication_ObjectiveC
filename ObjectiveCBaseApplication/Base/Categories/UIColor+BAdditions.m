@@ -4,7 +4,6 @@
 //
 //  Created by Linh on 8/4/17.
 //  Copyright © 2017 smvn. All rights reserved.
-//
 
 #import "UIColor+BAdditions.h"
 #import "UIColor+SAMAdditions.h"

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define TXT(var) [[BLanguage sharedInstance] localizedPhrase:(var)]
+#define TXT(var) [[BLang sharedInstance] localizedPhrase:(var)]
 
 extern NSString *const BLanguageCodeEN;
 extern NSString *const BLanguageCodeVN;

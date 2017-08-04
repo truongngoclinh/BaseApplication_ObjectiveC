@@ -1,4 +1,25 @@
 PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - CocoaLumberjack (2.4.0):
     - CocoaLumberjack/Default (= 2.4.0)
     - CocoaLumberjack/Extensions (= 2.4.0)
@@ -11,15 +32,17 @@ PODS:
   - SAMCategories (0.5.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.5)
   - CocoaLumberjack (~> 2.0)
   - Masonry (~> 0.6)
   - SAMCategories (~> 0.5.2)
 
 SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   SAMCategories: bf8287f7961a0b343168d1fee16338dc1626ea39
 
-PODFILE CHECKSUM: 7d832fbdd0fd88dfb80eb8a24922367926eada5e
+PODFILE CHECKSUM: 740188564613369111a56d637f1557bcfece999a
 
 COCOAPODS: 1.2.1
