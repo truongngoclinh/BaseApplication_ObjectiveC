@@ -1,0 +1,57 @@
+//
+//  Base-Prefix.pch
+//  ObjectiveCBaseApplication
+//
+//  Created by Linh on 8/4/17.
+//  Copyright © 2017 smvn. All rights reserved.
+//
+
+#ifndef Base_Prefix_pch
+#define Base_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import "BLog.h"
+#import "BTheme.h"
+#import "BLang.h"
+#import "BScale.h"
+//#import "CPBlockDefine.h"
+//#import "CPClientStream.h"
+//
+#import "Masonry.h"
+#import "UIColor+BAdditions.h"
+//#import "NSCalendar+CPAdditions.h"
+
+#ifdef DEBUG
+//#import "CPAssertionObject.h"
+#endif
+
+#endif
+
+#ifdef DEBUG
+#define CPBlockParameterAssert(condition)   if (!(condition)) { \
+[[[CPAssertionObject alloc] init] parameterAssert:NO]; \
+}
+#else
+#define CPBlockParameterAssert(condition)
+#endif
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define CPWeakify(st, wk) __weak typeof(st) (wk) = (st)
+#define CPCWeakify(st, wk) __weak typeof(st) wk = st
+
+/** http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown */
+#define CPPerformSelector(selector, target, object) do { \
+void (*func)(id, SEL, id) = (void *)[target methodForSelector:selector]; \
+func(target, selector, object); \
+} while(0);
+
+
+#endif /* Base_Prefix_pch */
