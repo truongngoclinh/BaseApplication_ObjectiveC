@@ -865,7 +865,8 @@
 				BA4882A81F35CA540022DD30 /* BTFoundation */,
 				BA4882C91F35CA540022DD30 /* LICENSE */,
 			);
-			path = BTFoundation;
+			name = BTFoundation;
+			path = ../BTFoundation;
 			sourceTree = "<group>";
 		};
 		BA4882A81F35CA540022DD30 /* BTFoundation */ = {
@@ -935,7 +936,6 @@
 				BA7D55521F348E2900401E5E /* Errors */,
 				BA7D55541F348E2900401E5E /* Formatters */,
 				BA7D55491F348C7F00401E5E /* Libs */,
-				BA4882A71F35CA540022DD30 /* BTFoundation */,
 				BA7D54DE1F34346100401E5E /* Country Logic */,
 				BA7D54D51F3431C000401E5E /* Supporting */,
 				BA7D54A01F342EFE00401E5E /* Views */,
@@ -1172,6 +1172,7 @@
 		BA7D55491F348C7F00401E5E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				BA4882A71F35CA540022DD30 /* BTFoundation */,
 				BA48829C1F35CA1D0022DD30 /* MBProgressHUD */,
 				BA4882281F35C72E0022DD30 /* BTUIKit */,
 				BA7D55E21F34920B00401E5E /* Mantle */,
