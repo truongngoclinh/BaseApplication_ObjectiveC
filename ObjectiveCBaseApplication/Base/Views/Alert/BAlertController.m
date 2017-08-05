@@ -103,16 +103,16 @@ static const NSInteger kMaxActionCount = 2;
         button.titleLabel.font = [BTheme lightFontOfSize:18];
         button.backgroundColor = [BTheme backgroundColor];
         [button setTitle:action.title forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor cp_colorWithHex:@"488cf4"] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor cp_colorWithHex:@"6ec9ff"] forState:UIControlStateHighlighted];
+        [button setTitleColor:[UIColor b_colorWithHex:@"488cf4"] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor b_colorWithHex:@"6ec9ff"] forState:UIControlStateHighlighted];
         [button addTarget:self action:@selector(didTapActionButton:) forControlEvents:UIControlEventTouchUpInside];
         
         [buttons addObject:button];
         [self.alertBackgroundView addSubview:button];
         
         if (idx > 0) {
-            [button cp_addDividerAtPosition:BViewDividerPositionLeft
-                                      color:[UIColor cp_colorWithHex:@"E6EAF1"]
+            [button b_addDividerAtPosition:BViewDividerPositionLeft
+                                      color:[UIColor b_colorWithHex:@"E6EAF1"]
                                   thickness:0.5
                                       inset:UIEdgeInsetsMake(13, 0, 13, 0)];
         }

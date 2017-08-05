@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class BTextFieldController;
 @interface UITextField (BTextFieldController)
 
-@property (nonatomic, strong, readonly) BTextFieldController *b_TextFieldController;
+@property (nonatomic, strong) BTextFieldController *b_TextFieldController;
 
 /** 
  * Once a controller has been attached, do not modify self.delegate.

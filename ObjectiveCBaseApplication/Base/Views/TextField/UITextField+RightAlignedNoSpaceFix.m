@@ -116,7 +116,7 @@ static char BTextFieldRightAlignedNoSpaceFixIdentifier;
 
 #pragma mark - Accessor
 
-- (void)setCp_isFixEnabled:(BOOL)b_isFixEnabled
+- (void)setB_isFixEnabled:(BOOL)b_isFixEnabled
 {
     objc_setAssociatedObject(self, &BTextFieldRightAlignedNoSpaceFixIdentifier, [NSNumber numberWithBool:b_isFixEnabled], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

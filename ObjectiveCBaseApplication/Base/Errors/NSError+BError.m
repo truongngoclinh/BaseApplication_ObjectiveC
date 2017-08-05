@@ -65,10 +65,10 @@
 
 @implementation NSError (BMantle)
 
-- (BOOL)b_isResponseParsingError
-{
-    return [self.domain isEqualToString:BTransformerErrorHandlingErrorDomain];
-}
+//- (BOOL)b_isResponseParsingError
+//{
+//    return [self.domain isEqualToString:BTransformerErrorHandlingErrorDomain];
+//}
 
 - (BOOL)b_isResponseValidatingParsedResultError
 {

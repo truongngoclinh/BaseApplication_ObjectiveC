@@ -10,7 +10,7 @@
 
 #define BNetworkErrorDomain NSURLErrorDomain
 #define BResponseErrorDomain AFURLResponseSerializationErrorDomain
-#define BTransformerErrorHandlingErrorDomain MTLTransformerErrorHandlingErrorDomain
+//#define BTransformerErrorHandlingErrorDomain MTLTransformerErrorHandlingErrorDomain
 #define BModelErrorDomain @"MTLModelErrorDomain"
 
 @interface NSError (BError)

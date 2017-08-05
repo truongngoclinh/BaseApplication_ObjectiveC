@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BNavigationBar.h"
+#import "BSearchBar.h"
+#import "BUIService.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self defaultAppearance];
+   
+    [BUIService sharedInstance].window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
     return YES;
 }
 
@@ -40,6 +46,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)defaultAppearance
+{
+    [[BNavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[BNavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName: [BTheme mediumFontOfSize:16],
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    NSDictionary *searchBarTextAttributes = @{NSFontAttributeName: [BTheme lightFontOfSize:14],
+                                              NSForegroundColorAttributeName:[UIColor whiteColor]};
+    [[UITextField appearanceWhenContainedIn:[BSearchBar class], nil] setDefaultTextAttributes:searchBarTextAttributes];
 }
 
 @end
