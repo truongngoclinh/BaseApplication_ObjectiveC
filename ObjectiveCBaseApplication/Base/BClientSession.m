@@ -35,7 +35,7 @@ BLogLevel(BLogLevelDebug)
 
 - (void)startSession
 {
-    [self launchMainApp];
+    [self launchLogin];
 //    if (self.managerLogin.sessionInfo) {
 //        DDLogInfo(@"[%@] Session info exists. Showing main app as root", self.class);
 //        
@@ -55,16 +55,13 @@ BLogLevel(BLogLevelDebug)
 
 #pragma mark - Launch
 
-//- (void)launchLogin
-//{
-//    DDLogInfo(@"[%@] launchLogin", self.class);
-//   
-//    NSParameterAssert(!self.managerLogin.sessionInfo);
-//    NSParameterAssert(!self.isInMainApp);
-//    
+- (void)launchLogin
+{
+    DDLogInfo(@"[%@] launchLogin", self.class);
+    
 //    self.isInMainApp = NO;
-//    [self.managerUI showLoginRootViewController];
-//}
+    [self.managerUI showLoginRootViewController];
+}
 
 - (void)launchMainApp
 {
@@ -81,6 +78,7 @@ BLogLevel(BLogLevelDebug)
 - (void)initializeManagers
 {
     BUIService *UIService = [BUIService sharedInstance];
+    BLang *lang = [BLang sharedInstance];
     _managerUI = [[BUIManager alloc] initWithUIService:UIService];
 }
 

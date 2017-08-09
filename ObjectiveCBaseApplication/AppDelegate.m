@@ -10,6 +10,8 @@
 #import "BNavigationBar.h"
 #import "BSearchBar.h"
 #import "BUIService.h"
+#import "BClientStream.h"
+#import "BClientSession.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +23,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self defaultAppearance];
    
-    [BUIService sharedInstance].window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    BUIService *uiService = [BUIService sharedInstance];
+    uiService.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = uiService.window;
     
+    BClientStream *clientStream = [BClientStream sharedInstance];
+    [clientStream startSession];
+   
     return YES;
 }
 

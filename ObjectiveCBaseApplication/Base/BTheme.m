@@ -11,9 +11,13 @@
 
 const CGFloat BThemeCellHeightDefault = 49;
 const CGFloat BThemeSectionGapDefault = 10;
-const CGFloat BThemePaddingDefault = 13;
+const CGFloat BThemePaddingDefault = 14;
 const CGFloat BThemeButtonHeightDefault = 42;
 const CGFloat BThemeButtonHeightCompact = 36;
+
+const CGFloat BThemeTextFieldHeightDefault = 42;
+const CGFloat BThemeLabelHeightDefault = 42;
+const CGFloat BThemeDefaultMarginTop = 16;
 
 @implementation BTheme
 

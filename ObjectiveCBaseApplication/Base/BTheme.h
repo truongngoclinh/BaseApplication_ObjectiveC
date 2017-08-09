@@ -16,6 +16,10 @@ extern const CGFloat BThemePaddingDefault;
 extern const CGFloat BThemeButtonHeightDefault;
 extern const CGFloat BThemeButtonHeightCompact;
 
+extern const CGFloat BThemeTextFieldHeightDefault;
+extern const CGFloat BThemeLabelHeightDefault;
+extern const CGFloat BThemeDefaultMarginTop;
+
 @interface BTheme : NSObject
 
 #pragma mark - Colors

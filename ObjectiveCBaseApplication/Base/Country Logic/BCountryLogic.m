@@ -18,7 +18,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 #ifdef VN
-        countryLogic = [[BVietNameLogic alloc] init];
+        countryLogic = [[BVietnamLogic alloc] init];
 #elif EN
         countryLogic = [[BGeneralLogic alloc] init];
 #else

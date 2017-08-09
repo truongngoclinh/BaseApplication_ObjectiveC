@@ -26,7 +26,7 @@ BLogLevel(BLogLevelDebug);
 NSString *const BLangCodeEN = @"en";
 NSString *const BLangCodeVN = @"vn";
 
-static NSString *const kLanguageKey = @"BLUDHPreferredLanguageKey";
+static NSString *const kLanguageKey = @"BUDPreferredLanguageKey";
 static NSString *const kLanguageDirectory = @"localized_resources/language";
 
 static NSInteger kLanguageDefaultCodeInteger = 0;
@@ -200,6 +200,7 @@ static NSInteger kLanguageDefaultCodeInteger = 0;
             NSParameterAssert([fileName length]);
             NSParameterAssert([displayName length]);
             NSParameterAssert([notification length]);
+            
             BLangItem *item = [[BLangItem alloc] init];
             item.filename = fileName;
             item.displayName = displayName;

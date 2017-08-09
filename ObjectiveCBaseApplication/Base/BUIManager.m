@@ -3,14 +3,13 @@
 //  ObjectiveCBaseApplication
 //
 //  Created by Linh on 23/2/15.
-//  Copyright (c) 2015 Garena. All rights reserved.
+//  Copyright © 2017 smvn. All rights reserved.
 //
 
 #import "BUIManager.h"
 #import "UIViewController+BNavigation.h"
 
-//#import "BLoginViewController.h"
-//
+#import "BLoginViewController.h"
 #import "BTabBarController.h"
 //#import "BAccountViewController.h"
 //#import "BSellViewController.h"
@@ -40,8 +39,8 @@
 
 - (void)showLoginRootViewController
 {
-//    BLoginViewController *loginVC = [[BLoginViewController alloc] initWithNibName:nil bundle:nil];
-//    [self.UIService replaceRootViewController:[loginVC b_embedInLoginNavigationController]];
+    BLoginViewController *loginVC = [[BLoginViewController alloc] initWithNibName:nil bundle:nil];
+    [self.UIService replaceRootViewController:[loginVC b_embedInLoginNavigationController]];
 }
 
 - (void)showRootViewController

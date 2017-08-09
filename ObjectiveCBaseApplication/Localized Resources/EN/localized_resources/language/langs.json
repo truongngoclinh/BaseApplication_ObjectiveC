@@ -1,0 +1,15 @@
+{
+    "last_updated": 1501064150,
+    "langs": [
+        {
+              "name": "en",
+              "notification": "1",
+              "display": "English"
+        },
+        {
+              "name": "vi",
+              "notification": "0",
+              "display": "Tiếng Việt"
+        }
+    ]
+}

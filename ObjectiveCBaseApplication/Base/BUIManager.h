@@ -3,7 +3,7 @@
 //  ObjectiveCBaseApplication
 //
 //  Created by Linh on 23/2/15.
-//  Copyright (c) 2015 Garena. All rights reserved.
+//  Copyright © 2017 smvn. All rights reserved.
 //
 
 #import "BManager.h"

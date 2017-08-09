@@ -9,24 +9,24 @@
 
 #import "BNavigationController.h"
 #import "BNavigationBar.h"
-//#import "BLoginNavigationController.h"
+#import "BLoginNavigationController.h"
 
 @implementation UIViewController (BNavigation)
 
-- (UINavigationController *)cp_embedInNavigationController
+- (UINavigationController *)b_embedInNavigationController
 {
     BNavigationController *navigationController = [[BNavigationController alloc] initWithNavigationBarClass:[BNavigationBar class]
                                                                                                  toolbarClass:nil];
     [navigationController pushViewController:self animated:NO];
     return navigationController;
 }
-//
-//- (UINavigationController *)cp_embedInLoginNavigationController
-//{
-//    BLoginNavigationController *navigationController = [[BLoginNavigationController alloc] initWithNavigationBarClass:[BNavigationBar class]
-//                                                                                                 toolbarClass:nil];
-//    [navigationController pushViewController:self animated:NO];
-//    return navigationController;
-//}
+
+- (UINavigationController *)b_embedInLoginNavigationController
+{
+    BLoginNavigationController *navigationController = [[BLoginNavigationController alloc] initWithNavigationBarClass:[BNavigationBar class]
+                                                                                                 toolbarClass:nil];
+    [navigationController pushViewController:self animated:NO];
+    return navigationController;
+}
 
 @end
